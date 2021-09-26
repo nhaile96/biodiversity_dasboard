@@ -1,5 +1,5 @@
 function buildMetadata(sample) {
-    d3.json("samples.json").then((data) => {
+    d3.json("../StarterCode/samples.json").then((data) => {
         var metadata=data.metadata;
         var resultsarray= metadata.filter(sampleobject =>
             sampleobject.id == sample);
@@ -16,7 +16,7 @@ function buildMetadata(sample) {
 
 function buildCharts(sample) {
 
-    d3.json("samples.json").then((data) => {
+    d3.json("../StarterCode/samples.json").then((data) => {
       var samples= data.samples;
       var resultsarray= samples.filter(sampleobject => 
           sampleobject.id == sample);
